@@ -1,0 +1,19 @@
+server:
+  port: 1201
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    label: master
+    config:
+      server:
+        git:
+          uri: https://gitee.com/youngzil/Spring-Cloud-Config
+#          search-paths: repo
+#          username:
+#          password:
+
+
+
+

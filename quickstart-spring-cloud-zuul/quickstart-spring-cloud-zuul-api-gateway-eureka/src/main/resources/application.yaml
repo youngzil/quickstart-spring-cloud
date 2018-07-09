@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: api-gateway-eureka
+
+server:
+  port: 1101
+
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      serviceId: eureka-provider
+#  ignored-services=*#不使用默认路由，eager-load设置才生效
+#  ribbon
+#  	eager-load
+#  		enabled:true#设置eager-load
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:1111/eureka/
+
