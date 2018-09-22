@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<parent>
+		<groupId>org.quickstart</groupId>
+		<artifactId>quickstart-spring-cloud</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>..</relativePath> <!-- lookup parent from repository -->
+	</parent>
+
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>quickstart-spring-cloud-example</artifactId>
+	<packaging>jar</packaging>
+	<name>${project.artifactId}-${project.version}</name>
+	<url>http://maven.apache.org</url>
+	<description>${project.artifactId}-${project.version}</description>
+
+
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		<guava.version>16.0.1</guava.version>
+		<surefire.version>2.19.1</surefire.version>
+		<aspectj.version>1.6.11</aspectj.version>
+		<main.basedir>${basedir}/../..</main.basedir>
+		<docker.image.prefix>styletang</docker.image.prefix>
+		<project.build.finalName>quickstart-spring-cloud-web</project.build.finalName>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-config</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka-server</artifactId>
+		</dependency>
+
+		<!-- service discovery -->
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-feign</artifactId>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<finalName>quickstart-spring-cloud-web</finalName>
+	</build>
+
+</project>

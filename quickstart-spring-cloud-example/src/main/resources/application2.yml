@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: eureka-service
+    
+server:
+  port: 58000
+management:
+  port: 59000
+
+eureka:
+  client:
+    #register-with-eureka: false
+    fetch-registry: false
+  #instance:
+  #  prefer-ip-address: true

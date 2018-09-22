@@ -1,3 +1,8 @@
+原项目地址
+https://gitee.com/youngzil/quickstart-all
+
+
+
 https://projects.spring.io/spring-cloud/
 
 https://github.com/spring-cloud
