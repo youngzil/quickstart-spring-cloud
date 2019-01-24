@@ -21,10 +21,10 @@
 
 	<modules>
 		<module>quickstart-spring-cloud-hystrix-dashboard</module>
-    <module>quickstart-spring-cloud-hystrix-turbine</module>
-    <module>quickstart-spring-cloud-hystrix-turbine-amqp</module>
-    <module>quickstart-spring-cloud-hystrix-collapser-provider</module>
-    <module>quickstart-spring-cloud-hystrix-collapser-consumer</module>
-  </modules>
+		<module>quickstart-spring-cloud-hystrix-turbine</module>
+		<module>quickstart-spring-cloud-hystrix-turbine-amqp</module>
+		<module>quickstart-spring-cloud-hystrix-collapser-provider</module>
+		<module>quickstart-spring-cloud-hystrix-collapser-consumer</module>
+	</modules>
 
 </project>

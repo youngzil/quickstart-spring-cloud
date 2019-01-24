@@ -27,16 +27,16 @@
 	<modules>
 		<module>quickstart-spring-cloud-eureka-provider</module>
 		<module>quickstart-spring-cloud-eureka-server</module>
-    <module>quickstart-spring-cloud-eureka-consumer</module>
-    <module>quickstart-spring-cloud-eureka-consumer-ribbon</module>
-    <module>quickstart-spring-cloud-eureka-consumer-feign</module>
-    <module>quickstart-spring-cloud-eureka-feign-upload-client</module>
-    <module>quickstart-spring-cloud-eureka-feign-upload-server</module>
-    <module>quickstart-spring-cloud-eureka-consumer-ribbon-hystrix</module>
-    <module>quickstart-spring-cloud-eureka-consumer-feign-hystrix</module>
-    <module>quickstart-spring-cloud-eureka-feign-api</module>
-    <module>quickstart-spring-cloud-eureka-feign-provider</module>
-    <module>quickstart-spring-cloud-eureka-feign-consumer</module>
-  </modules>
-	
+		<module>quickstart-spring-cloud-eureka-consumer</module>
+		<module>quickstart-spring-cloud-eureka-consumer-ribbon</module>
+		<module>quickstart-spring-cloud-eureka-consumer-feign</module>
+		<module>quickstart-spring-cloud-eureka-feign-upload-client</module>
+		<module>quickstart-spring-cloud-eureka-feign-upload-server</module>
+		<module>quickstart-spring-cloud-eureka-consumer-ribbon-hystrix</module>
+		<module>quickstart-spring-cloud-eureka-consumer-feign-hystrix</module>
+		<module>quickstart-spring-cloud-eureka-feign-api</module>
+		<module>quickstart-spring-cloud-eureka-feign-provider</module>
+		<module>quickstart-spring-cloud-eureka-feign-consumer</module>
+	</modules>
+
 </project>
