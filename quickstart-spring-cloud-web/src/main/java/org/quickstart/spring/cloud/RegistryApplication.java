@@ -3,7 +3,7 @@
  * 文件名：RegistryApplication.java
  * 版本信息：
  * 日期：2017年7月9日
- * Copyright asiainfo Corporation 2017
+ * Copyright yangzl Corporation 2017
  * 版权所有 *
  */
 package org.quickstart.spring.cloud;
@@ -15,7 +15,7 @@ import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 /**
  * RegistryApplication
  * 
- * @author：yangzl@asiainfo.com
+ * @author：youngzil@163.com
  * @2017年7月9日 下午12:32:25
  * @version 1.0
  */

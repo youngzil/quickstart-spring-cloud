@@ -3,7 +3,7 @@
  * 文件名：TagSampler.java
  * 版本信息：
  * 日期：2018年5月18日
- * Copyright asiainfo Corporation 2018
+ * Copyright yangzl Corporation 2018
  * 版权所有 *
  */
 package org.quickstart.spring.cloud.sleuth.trace1;
@@ -14,7 +14,7 @@ import org.springframework.cloud.sleuth.Span;
 /**
  * TagSampler 
  *  
- * @author：yangzl@asiainfo.com
+ * @author：youngzil@163.com
  * @2018年5月18日 下午12:59:39 
  * @since 1.0
  */
