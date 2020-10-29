@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-	<modelVersion>4.0.0</modelVersion>
+  <modelVersion>4.0.0</modelVersion>
   <groupId>org.quickstart</groupId>
   <artifactId>quickstart-spring-cloud</artifactId>
   <packaging>pom</packaging>
@@ -10,58 +11,106 @@
   <url>http://maven.apache.org</url>
   <description>Demo project for XXX</description>
 
-	<properties>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>1.8</java.version>
-	</properties>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <java.version>1.8</java.version>
+  </properties>
 
-	<dependencyManagement>
-		<dependencies>
+  <dependencyManagement>
+    <dependencies>
 
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-dependencies</artifactId>
-				<version>1.5.21.RELEASE</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
+      <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-dependencies</artifactId>
+        <version>1.5.22.RELEASE</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
 
-			<dependency>
-				<groupId>org.springframework.cloud</groupId>
-				<artifactId>spring-cloud-dependencies</artifactId>
-				<!-- <version>Dalston.RELEASE</version> -->
-				<version>Edgware.RELEASE</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
+      <dependency>
+        <groupId>org.springframework.cloud</groupId>
+        <artifactId>spring-cloud-dependencies</artifactId>
+        <!-- <version>Dalston.RELEASE</version> -->
+        <version>Edgware.RELEASE</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
 
-		</dependencies>
-	</dependencyManagement>
+    </dependencies>
+  </dependencyManagement>
 
-	<dependencies>
-	</dependencies>
+  <dependencies>
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>1.18.10</version>
+      <scope>provided</scope>
+    </dependency>
 
-	<modules>
-		<module>quickstart-spring-cloud-web</module>
-		<module>quickstart-spring-cloud-eureka</module>
-		<module>quickstart-spring-cloud-consul</module>
-		<module>quickstart-spring-cloud-config</module>
-		<module>quickstart-spring-cloud-hystrix</module>
-		<module>quickstart-spring-cloud-zuul</module>
-		<module>quickstart-spring-cloud-stream</module>
-		<module>quickstart-spring-cloud-sleuth</module>
-		<module>quickstart-spring-cloud-example</module>
-	</modules>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.13</version>
+      <scope>test</scope>
+    </dependency>
 
-	<!-- <repositories> -->
-	<!-- <repository> -->
-	<!-- <id>spring-milestones</id> -->
-	<!-- <name>Spring Milestones</name> -->
-	<!-- <url>https://repo.spring.io/libs-milestone</url> -->
-	<!-- <snapshots> -->
-	<!-- <enabled>false</enabled> -->
-	<!-- </snapshots> -->
-	<!-- </repository> -->
-	<!-- </repositories> -->
+  </dependencies>
+
+  <modules>
+    <module>quickstart-spring-cloud-web</module>
+    <module>quickstart-spring-cloud-eureka</module>
+    <module>quickstart-spring-cloud-consul</module>
+    <module>quickstart-spring-cloud-config</module>
+    <module>quickstart-spring-cloud-hystrix</module>
+    <module>quickstart-spring-cloud-zuul</module>
+    <module>quickstart-spring-cloud-stream</module>
+    <module>quickstart-spring-cloud-sleuth</module>
+    <module>quickstart-spring-cloud-example</module>
+  </modules>
+
+  <!-- <repositories> -->
+  <!-- <repository> -->
+  <!-- <id>spring-milestones</id> -->
+  <!-- <name>Spring Milestones</name> -->
+  <!-- <url>https://repo.spring.io/libs-milestone</url> -->
+  <!-- <snapshots> -->
+  <!-- <enabled>false</enabled> -->
+  <!-- </snapshots> -->
+  <!-- </repository> -->
+  <!-- </repositories> -->
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+          <compilerArgument>-parameters</compilerArgument>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <repositories>
+
+    <repository>
+      <id>alimaven-public</id>
+      <name>aliyun maven</name>
+      <url>https://maven.aliyun.com/repository/public</url>
+      <releases>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+        <checksumPolicy>fail</checksumPolicy>
+      </snapshots>
+    </repository>
+
+  </repositories>
 
 </project>
